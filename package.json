@@ -1,0 +1,45 @@
+{
+  "name": "simple-unique",
+  "version": "1.0.0",
+  "description": "完全随机生成唯一字符串 · 超轻量 | Completely random generation of unique strings · Ultra-lightweight",
+  "main": "dist/unique.cjs.js",
+  "module": "dist/unique.esm.js",
+  "unpkg": "dist/unique.js",
+  "jsdelivr": "dist/unique.js",
+  "scripts": {
+    "test": "node test.js",
+    "test:hot": "nodemon test.js",
+    "build": "npx rollup -c",
+    "lint:fix": "npx eslint --fix . && npx prettier --check --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lete114/Simple-Unique.git"
+  },
+  "keywords": [
+    "id",
+    "unique",
+    "unique id",
+    "unique string",
+    "generator",
+    "random"
+  ],
+  "author": "Lete乐特",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lete114/Simple-Unique/issues"
+  },
+  "homepage": "https://github.com/Lete114/Simple-Unique#readme",
+  "devDependencies": {
+    "@babel/core": "^7.17.7",
+    "@babel/preset-env": "^7.16.11",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "eslint": "^8.11.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.6.0",
+    "rollup": "^2.70.1",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}

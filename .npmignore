@@ -1,0 +1,30 @@
+# git
+.git
+
+# vscode
+.vscode
+
+# project file
+/node_modules
+
+.editorconfig
+
+.eslintignore
+.eslintrc.yml
+
+.gitignore
+
+.npmignore
+
+.prettierignore
+.prettierrc.yml
+
+package-lock.json
+
+rollup.config.js
+
+README_EN.md
+
+test.js
+
+
