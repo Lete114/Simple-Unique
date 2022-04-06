@@ -4,12 +4,5 @@
  * @default 10
  * @returns {String} Randomly generated string
  */
-function unique(size) {
-  size = size || 10
-  const r = () => Math.random().toString(36).slice(2)
-  let result = r()
-  while (result.length < size) result += r()
-  return result.slice(0, size)
-}
-
+declare function unique(size?: Number): string
 export default unique

@@ -1,18 +1,23 @@
 /**
  * Completely random generation of unique strings
- * @param {Boolean} dot Whether to append to generate '.' Random string
- * @default false
+ * @param {Number} size Generate the length of a random string
+ * @default 10
  * @returns {String} Randomly generated string
  */
-function unique() {
-  var dot = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
-  var r = Math.random;
-  var before = r().toString(36).slice(2);
-  var nonce = Number(r().toString().slice(2));
-  var after = (Date.now() + nonce).toString(36).slice(2);
-  var dotNonce = dot ? r().toString(36).slice(1) : '';
-  var result = before + after + dotNonce;
-  return result;
+function unique(size) {
+  size = size || 10;
+
+  var r = function r() {
+    return Math.random().toString(36).slice(2);
+  };
+
+  var result = r();
+
+  while (result.length < size) {
+    result += r();
+  }
+
+  return result.slice(0, size);
 }
 
 export { unique as default };

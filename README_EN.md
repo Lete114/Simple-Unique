@@ -16,9 +16,9 @@
 
 Completely random generation of unique strings · **Ultra-lightweight**
 
-Compressed size: 320~ Byte
+Compressed size: 180~ Byte
 
-gzip size: 200~ bit
+gzip size: 150~ bit
 
 ## Installing
 
@@ -47,10 +47,10 @@ Using unpkg CDN:
 ```js
 const unique = require('simple-unique')
 const arr1 = [unique(), unique()]
-const arr2 = [unique(true), unique(true)]
+const arr2 = [unique(20), unique(20)]
 
-console.log(arr1[0] === arr1[1], arr1) // false [ 'wps9v86i1icltz0y1yub', 'g1wozldayykvszuh2xyq' ]
-console.log(arr2[0] === arr2[1], arr2) // false [ '2ljb1nu94l4e6y49oa2w.dp8ftwjtlzv', 'wmuogoa3lt1g45ycq0o.o7auhvika2' ]
+console.log(arr1[0] === arr1[1], arr1) // false [ 'krntrfokkp', '35tftcm3tr' ]
+console.log(arr2[0] === arr2[1], arr2) // false [ 'lva8timtvipgbenfjkhj', '9s32qj2chqulqxox7npq' ]
 ```
 
 ### Browser
@@ -59,9 +59,9 @@ console.log(arr2[0] === arr2[1], arr2) // false [ '2ljb1nu94l4e6y49oa2w.dp8ftwjt
 <script src="https://cdn.jsdelivr.net/npm/simple-unique/dist/unique.min.js"></script>
 <script>
   const arr1 = [unique(), unique()]
-  const arr2 = [unique(true), unique(true)]
+  const arr2 = [unique(20), unique(20)]
 
-  console.log(arr1[0] === arr1[1], arr1) // false [ 'wps9v86i1icltz0y1yub', 'g1wozldayykvszuh2xyq' ]
-  console.log(arr2[0] === arr2[1], arr2) // false [ '2ljb1nu94l4e6y49oa2w.dp8ftwjtlzv', 'wmuogoa3lt1g45ycq0o.o7auhvika2' ]
+  console.log(arr1[0] === arr1[1], arr1) // false [ 'gsf2e7u9fw', 'y2vm3x0tpv' ]
+  console.log(arr2[0] === arr2[1], arr2) // false [ 'l399uakldce29mfev391', '36t375r2uim63wkplz1s' ]
 </script>
 ```
