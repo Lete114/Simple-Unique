@@ -42,6 +42,31 @@ Using unpkg CDN:
 
 ## 使用案例
 
+### CLI
+
+你可以全局安装后在终端使用
+
+```bash
+npm install simple-unique -g
+```
+
+你也可以使用`npx`免安装使用`Simple-Unique`
+
+```bash
+npx simple-unique
+npx: installed 1 in 1.82s
+3f7c94zs79
+```
+
+自定义唯一字符串长度
+
+> 请注意，`sunique`是全局安装后，产生的别名，既可以使用`sunique`也可以使用`simple-unique`(推荐`sunique`)
+
+```bash
+sunique --size 20
+y8n69mohr3pmf7vg19to
+```
+
 ### Node.js
 
 ```js
@@ -77,7 +102,6 @@ console.log(arr2[0] === arr2[1], arr2) // false [ 'bcl5371wv3txd3d3a8zt', 'uvt8u
 </script>
 ```
 
-
 ## Simple-Unique VS NanoID
 
 [Simple-Unique](https://github.com/Lete114/Simple-Unique) 与 [NanoID](https://github.com/ai/nanoid) 对比，分别生成`9999999`(一千万)个唯一 id，长度为 10 位数
@@ -85,8 +109,9 @@ console.log(arr2[0] === arr2[1], arr2) // false [ 'bcl5371wv3txd3d3a8zt', 'uvt8u
 > 如下结果是在浏览器控制台中进行测试的
 >
 > Simple-Unique 的效率大约是 NanoID 的 7 倍
-> - Simple-Unique: 3775.31591796875 ms (3~5秒左右)
-> - NanoID: 26226.182861328125 ms (26~28秒左右)
+>
+> - Simple-Unique: 3775.31591796875 ms (3~5 秒左右)
+> - NanoID: 26226.182861328125 ms (26~28 秒左右)
 
 ```js
 // Simple-Unique

@@ -42,6 +42,31 @@ Using unpkg CDN:
 
 ## Example Usage
 
+### CLI
+
+You can install it globally and use it in the terminal
+
+```bash
+npm install simple-unique -g
+```
+
+You can also use `npx` to use `Simple-Unique` without installation
+
+```bash
+npx simple-unique
+npx: installed 1 in 1.82s
+3f7c94zs79
+```
+
+Customized unique string length
+
+> Note that `sunique` is the alias generated after global installation, either `sunique` or `simple-unique` can be used (`sunique` is recommended)
+
+```bash
+sunique --size 20
+y8n69mohr3pmf7vg19to
+```
+
 ### Node.js
 
 ```js
@@ -79,12 +104,12 @@ console.log(arr2[0] === arr2[1], arr2) // false [ 'bcl5371wv3txd3d3a8zt', 'uvt8u
 
 ## Simple-Unique VS NanoID
 
-
-[Simple-Unique](https://github.com/Lete114/Simple-Unique)  is compared with [NanoID](https://github.com/ai/nanoid) to generate `9999999` (10 million) unique ids with 10 digits length respectively
+[Simple-Unique](https://github.com/Lete114/Simple-Unique) is compared with [NanoID](https://github.com/ai/nanoid) to generate `9999999` (10 million) unique ids with 10 digits length respectively
 
 > The following results were tested in the browser console
 >
 > Simple-Unique is about 7 times more efficient than NanoID
+>
 > - Simple-Unique: 3775.31591796875 ms (about 3~5 seconds)
 > - NanoID: 26226.182861328125 ms (about 26~28 seconds)
 

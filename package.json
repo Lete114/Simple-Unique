@@ -1,6 +1,6 @@
 {
   "name": "simple-unique",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "完全随机生成唯一字符串 · 超轻量 | Completely random generation of unique strings · Ultra-lightweight",
   "main": "dist/unique.cjs.js",
   "module": "dist/unique.esm.js",
@@ -13,6 +13,10 @@
     "build": "npx rollup -c",
     "build:watch": "npx rollup -c -w",
     "lint:fix": "npx eslint --fix . && npx prettier --check --write ."
+  },
+  "bin": {
+    "sunique": "bin/unique.js",
+    "simple-unique": "bin/unique.js"
   },
   "repository": {
     "type": "git",
